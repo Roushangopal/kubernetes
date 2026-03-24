@@ -6,7 +6,7 @@ module "eks" {
 
   vpc_id     = var.vpc_id
   subnet_ids = var.private_subnets
-  kubernetes_version = "1.27"
+  kubernetes_version = "1.35"
 
   enable_irsa = true
 
