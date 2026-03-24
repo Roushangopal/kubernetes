@@ -1,8 +1,12 @@
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
 
+  name    = "${var.project_name}-eks"
+  version = "21.0.9"
+
   vpc_id     = var.vpc_id
   subnet_ids = var.private_subnets
+  kubernetes_version = "1.27"
 
   enable_irsa = true
 
