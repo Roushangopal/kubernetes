@@ -1,0 +1,18 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and fill in the actual values
+
+# AWS Configuration
+region = "us-east-1"
+
+# Project Configuration
+project_name = "my-kubernetes-project"
+
+# VPC Configuration
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-east-1a", "us-east-1b"]
+public_subnets     = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnets    = ["10.0.101.0/24", "10.0.102.0/24"]
+
+# EKS Configuration
+# Make sure this key pair exists in your AWS account
+key_pair_name = "your-ec2-key-pair"
