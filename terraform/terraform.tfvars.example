@@ -15,4 +15,4 @@ private_subnets    = ["10.0.101.0/24", "10.0.102.0/24"]
 
 # EKS Configuration
 # Make sure this key pair exists in your AWS account
-key_pair_name = "your-ec2-key-pair"
+key_pair_name = "my-k8s-keypair"
